@@ -1,16 +1,24 @@
-echo "Library/" >> .gitignore
-echo "Temp/" >> .gitignore
-echo "Obj/" >> .gitignore
-echo "Build/" >> .gitignore
-echo ".vs/" >> .gitignore
-echo "*.csproj" >> .gitignore
-echo "*.unityproj" >> .gitignore
-echo "*.sln" >> .gitignore
-echo "*.user" >> .gitignore
-echo "*.pidb" >> .gitignore
-echo "*.suo" >> .gitignore
-echo "*.booproj" >> .gitignore
-echo "*.svd" >> .gitignore
-echo "*.pdb" >> .gitignore
-echo "*.mdb" >> .gitignore
-echo "*.opendb" >> .gitignore
+# Ignore Unity-generated folders
+Library/
+Temp/
+Obj/
+Build/
+.vs/
+unity_publishing/  # Prevent adding the embedded Git repo again
+
+# Ignore project files
+*.csproj
+*.unityproj
+*.sln
+*.user
+*.pidb
+*.suo
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+
+# Ignore OS-specific files (optional but helpful)
+.DS_Store
+Thumbs.db
